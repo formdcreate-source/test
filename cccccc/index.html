@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HK Concept — Plâtrerie, peinture et revêtements de sol. Saint-Étienne. Artisans du bâtiment.">
+  <title>HK Concept — Artisans du Bâtiment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo" aria-label="HK Concept">
+      <span class="logo-hk">HK</span>
+      <div class="logo-divider" aria-hidden="true"></div>
+      <span class="logo-sub">CONCEPT<br><small>SAINT-ÉTIENNE</small></span>
+    </a>
+    <ul class="nav-links" role="navigation">
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#realisations" class="nav-link">Réalisations</a></li>
+      <li><a href="#about" class="nav-link">À propos</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Devis gratuit</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services"     class="mobile-link">Services</a>
+    <a href="#realisations" class="mobile-link">Réalisations</a>
+    <a href="#about"        class="mobile-link">À propos</a>
+    <a href="#contact"      class="mobile-link">Contact</a>
+    <a href="#contact"      class="mobile-cta">Devis gratuit →</a>
+  </div>
+
+  <!-- ====== HERO SLIDESHOW ====== -->
+  <section class="hero" id="hero">
+
+    <!-- Slides -->
+    <div class="slides" id="slides">
+      <div class="slide active" data-index="0">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=85" alt="Chantier plâtrerie HK Concept" loading="eager">
+        <div class="slide-overlay"></div>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1800&q=85" alt="Peinture intérieure HK Concept" loading="lazy">
+        <div class="slide-overlay"></div>
+      </div>
+      <div class="slide" data-index="2">
+        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=1800&q=85" alt="Revêtement de sol HK Concept" loading="lazy">
+        <div class="slide-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Watermark numéro slide -->
+    <div class="slide-watermark" id="slideWatermark">01</div>
+
+    <!-- Contenu hero -->
+    <div class="hero-content">
+      <div class="hero-tag reveal">Artisans du bâtiment — Saint-Étienne</div>
+      <h1 class="hero-title">
+        <span class="hero-line reveal delay-1">L'ART</span>
+        <span class="hero-line hero-line--accent reveal delay-2">DU</span>
+        <span class="hero-line reveal delay-3">CHANTIER</span>
+      </h1>
+      <p class="hero-desc reveal delay-4">Plâtrerie · Peinture · Revêtements de sol</p>
+      <a href="#contact" class="btn-hero reveal delay-5">
+        Demander un devis
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+
+    <!-- Barre progression + nav slides -->
+    <div class="hero-controls">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="slide-nav">
+        <button class="slide-btn" id="prevSlide" aria-label="Slide précédent">←</button>
+        <span class="slide-count" id="slideCount">01 / 03</span>
+        <button class="slide-btn" id="nextSlide" aria-label="Slide suivant">→</button>
+      </div>
+    </div>
+
+    <!-- Stats flottantes -->
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">150<sup>+</sup></span>
+        <span class="hero-stat-label">Chantiers</span>
+      </div>
+      <div class="hero-stat-sep" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">10<sup>+</sup></span>
+        <span class="hero-stat-label">Années</span>
+      </div>
+      <div class="hero-stat-sep" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">98<sup>%</sup></span>
+        <span class="hero-stat-label">Satisfaits</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ====== RUNNING BAND ====== -->
+  <div class="band" aria-hidden="true">
+    <div class="band-inner" id="bandInner">
+      <span>Plâtrerie</span>
+      <span class="band-dot">×</span>
+      <span>Peinture</span>
+      <span class="band-dot">×</span>
+      <span>Revêtement de sol</span>
+      <span class="band-dot">×</span>
+      <span>Saint-Étienne</span>
+      <span class="band-dot">×</span>
+      <span>Garantie décennale</span>
+      <span class="band-dot">×</span>
+      <span>Devis gratuit</span>
+      <span class="band-dot">×</span>
+      <span>Artisans certifiés</span>
+      <span class="band-dot">×</span>
+    </div>
+  </div>
+
+  <!-- ====== SERVICES ====== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-label">01 — Savoir-faire</div>
+        <h2 class="section-title">NOS<br>MÉTIERS</h2>
+      </div>
+    </div>
+
+    <div class="services-list">
+
+      <div class="service-row reveal">
+        <div class="service-num">01</div>
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Plâtrerie">
+        </div>
+        <div class="service-info">
+          <h3>Plâtrerie</h3>
+          <p>Cloisons, doublages, faux plafonds. Nous façonnons vos espaces avec précision. Chaque surface est travaillée pour une finition irréprochable.</p>
+          <a href="#contact" class="link-arrow">Nous contacter <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="service-row service-row--rev reveal">
+        <div class="service-num">02</div>
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=700&q=80" alt="Peinture">
+        </div>
+        <div class="service-info">
+          <h3>Peinture</h3>
+          <p>Intérieur, extérieur, enduits décoratifs. Des teintes choisies avec vous, des finitions qui durent. Chaque mur raconte quelque chose.</p>
+          <a href="#contact" class="link-arrow">Nous contacter <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="service-row reveal">
+        <div class="service-num">03</div>
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=700&q=80" alt="Revêtements de sol">
+        </div>
+        <div class="service-info">
+          <h3>Revêtements de sol</h3>
+          <p>Parquet, carrelage, vinyle. Le sol est la base de tout. On le pose avec le soin qu'il mérite, pour que chaque pièce soit parfaite jusqu'au bout.</p>
+          <a href="#contact" class="link-arrow">Nous contacter <span>→</span></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== RÉALISATIONS ====== -->
+  <section class="realisations" id="realisations">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-label">02 — Portfolio</div>
+        <h2 class="section-title">NOS<br>TRAVAUX</h2>
+      </div>
+    </div>
+    <div class="real-grid">
+      <div class="real-item real-item--tall reveal">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Rénovation salon">
+        <div class="real-info">
+          <span class="real-cat">Plâtrerie</span>
+          <span class="real-name">Maison individuelle</span>
+        </div>
+      </div>
+      <div class="real-item reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=700&q=80" alt="Sol commercial">
+        <div class="real-info">
+          <span class="real-cat">Revêtement sol</span>
+          <span class="real-name">Commerce</span>
+        </div>
+      </div>
+      <div class="real-item reveal delay-2">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=80" alt="Cuisine rénovée">
+        <div class="real-info">
+          <span class="real-cat">Rénovation complète</span>
+          <span class="real-name">Appartement particulier</span>
+        </div>
+      </div>
+      <div class="real-item real-item--wide reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Salon moderne">
+        <div class="real-info">
+          <span class="real-cat">Peinture</span>
+          <span class="real-name">Résidence privée</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== À PROPOS ====== -->
+  <section class="about" id="about">
+    <div class="about-img-col">
+      <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=900&q=80" alt="Artisan HK Concept au travail">
+      <div class="about-img-tag">
+        <span class="about-years">10<sup>+</sup></span>
+        <span>ans d'expérience</span>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="section-label reveal">03 — À propos</div>
+      <h2 class="section-title reveal">L'ARTISANAT<br><em>SANS COMPROMIS</em></h2>
+      <p class="about-p reveal delay-1">HK Concept, c'est une équipe d'artisans basés à Saint-Étienne. On transforme vos intérieurs avec rigueur, précision et un vrai sens du détail — de la première visite jusqu'à la livraison.</p>
+      <p class="about-p reveal delay-2">Chaque chantier est traité comme si c'était le nôtre. Pas de sous-traitance. Pas de compromis sur la qualité.</p>
+      <div class="about-tags reveal delay-3">
+        <span>Devis gratuit</span>
+        <span>Sans sous-traitance</span>
+        <span>Garantie décennale</span>
+        <span>Saint-Étienne & environs</span>
+      </div>
+      <a href="#contact" class="btn-dark reveal delay-4">Parler de mon projet →</a>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+
+      <div class="contact-left reveal">
+        <div class="section-label">04 — Contact</div>
+        <h2 class="section-title">VOTRE<br>PROJET</h2>
+        <p>Décrivez-nous votre chantier. On vous répond sous 24h avec un devis gratuit et sans engagement.</p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="detail-label">Localisation</span>
+            <span>Saint-Étienne, France</span>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-label">Délai de réponse</span>
+            <span>Sous 24h</span>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-label">Devis</span>
+            <span>100% gratuit</span>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-label">Réseaux</span>
+            <a href="https://www.tiktok.com/@sas_hkconcept" target="_blank" rel="noopener">TikTok @sas_hkconcept</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right reveal delay-2">
+        <div class="form-wrap" role="form" aria-label="Formulaire de contact">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Nom *</label>
+              <input type="text" id="name" class="form-input" placeholder="Votre nom" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Téléphone</label>
+              <input type="tel" id="phone" class="form-input" placeholder="06 00 00 00 00" autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">E-mail *</label>
+            <input type="email" id="email" class="form-input" placeholder="votre@email.fr" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="service" class="form-label">Prestation</label>
+            <select id="service" class="form-input form-select">
+              <option value="" disabled selected>Choisir une prestation</option>
+              <option>Plâtrerie</option>
+              <option>Peinture</option>
+              <option>Revêtement de sol</option>
+              <option>Rénovation complète</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Votre projet</label>
+            <textarea id="message" class="form-input form-textarea" placeholder="Décrivez votre projet — surface, type de travaux…" rows="5"></textarea>
+          </div>
+          <button class="btn-submit" id="submitBtn" type="button">
+            <span id="submitText">Envoyer ma demande</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <span class="logo-hk">HK</span>
+        <div class="logo-divider"></div>
+        <span class="logo-sub">CONCEPT<br><small>SAINT-ÉTIENNE</small></span>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation pied de page">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="footer-cta">Devis gratuit →</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 HK Concept — Plâtrerie · Peinture · Revêtements de sol</span>
+      <span>Site réalisé par <strong>Formd</strong></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
